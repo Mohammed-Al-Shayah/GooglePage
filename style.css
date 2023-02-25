@@ -1,5 +1,5 @@
 body{
-    width: auto;
+    width: 100%;
     font-size: 15px;
     font-family:arial,sans-serif ;
 }
@@ -45,6 +45,7 @@ li a {
         background: #fff;
     border: 1px solid #dfe1e5;
     display: inline-flex;
+    max-width: 548px;
 
 
 }
@@ -57,7 +58,7 @@ li a {
 }
 
 .search{
-    width: 460px;
+    width: 430px;
     height: 44px;
     border: none;
 
@@ -66,7 +67,6 @@ li a {
 .micIcon{
     margin-top: 12px;
     margin-left: 20px;
-    margin-right:20px ;
 }
 
 .buttons{
@@ -105,7 +105,8 @@ hr{
 }
 
 .contentRight{
-    padding-left: 950px;
+    padding-right: 5%;
+    margin-left: 100%;
 }
 .contentUL{
     color: grey;
