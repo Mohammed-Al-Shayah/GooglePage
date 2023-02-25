@@ -1,11 +1,12 @@
 body{
-    width: 100%;
-    font-size: 15px;
-    font-family:arial,sans-serif ;
-}
-header{
-    padding-top: 5px;
-    margin-left: 85%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
+
+
+nav{
+    float: right;
 }
 
 .UlHeader{
@@ -30,63 +31,101 @@ li a {
     color: black;
   }
 
-.main{
+  .main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+  }
+
+  .google{
+    position: relative;
+    width: 300px;
+  }
+
+
+
+
+input[type="text"]{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-radius: 50px;
+    border: 1px solid #d5d4d4;
+    outline: none;
+    padding: 0 40px 0 45px;
+    font-size: 16px;
+    font-family: noto sans hk;
+    box-shadow: 0 2px 10px -7px #000;
+  }
+  .searchb{
+    width: 500px;
+    height: 45px;
+    position: absolute;
+    transform: translate(-20%,50%);
+  }
+  input[type="text"]{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-radius: 50px;
+    border: 1px solid #d5d4d4;
+    outline: none;
+    padding: 0 40px 0 45px;
+    font-size: 16px;
+    font-family: noto sans hk;
+    box-shadow: 0 2px 10px -7px #000;
+  }
+  .searchicon{
+    top: 13px;
+    left: 18px;
+    color: #777;
+    font-size: 21px;
+    z-index: 1;
+    position: absolute;
+  }
+  .mic{
+    position: absolute;
+    width: 13px;
+    right: -65px;
+    top: 13px;
+  }
+  .sbutton{
+    position: relative;
+    top: 100px;
     text-align: center;
-    padding-top: 100px;
-}
-.searchBox{
-    padding-top: 20px;
-}
-.contantSear{
-    padding: auto;
-    border-radius: 25px;
-    height: 44px;
-    color: grey;
-        background: #fff;
-    border: 1px solid #dfe1e5;
-    display: inline-flex;
-    max-width: 548px;
+  }
 
-
-}
-.searchIcon{
-    padding-top: 15px;
-    margin-left: 20px;
-    margin-right:20px ;
-
-    
-}
-
-.search{
-    width: 430px;
-    height: 44px;
+  input[type="button"]{
+    background: #ebe8e8;
     border: none;
-
-}
-
-.micIcon{
-    margin-top: 12px;
-    margin-left: 20px;
-}
-
-.buttons{
-    padding-top: 20px;
-}
-.button{
-    background-color: rgba(228, 226, 226, 0.486);
-    border: none;
-    height: 35px;
-    margin-left: 10px;
-}
+    padding-top: 50px;
+    padding: 8px 20px;
+    margin: 10px;
+    color: #4e4d4d;
+    border-radius: 5px;
+    outline: none;
+  }
+  input[type="button"]:hover{
+    box-shadow: 0 0 2px #000;
+    color: #000;
+    background: #ede8e8;
+  }
 
 .lang{
-    padding-top: 20px;
+    position: relative;
+    top: 100px;
+    text-align: center;
 }
+
+
 footer{
     background-color: rgba(228, 226, 226, 0.486);
-    position: fixed;
-	bottom: 0;
-    width: 100%;
+width: 100%;
+position: fixed;
+bottom: 0;
 
 }
 
@@ -101,13 +140,42 @@ hr{
 }
 
 .contantFooter{
-    display: inline-flex;
+    display:flex;
+    flex-wrap: wrap;
+
 }
 
 .contentRight{
-    padding-right: 5%;
-    margin-left: 100%;
+float:right;
 }
+
 .contentUL{
     color: grey;
 }
+
+.contentLeft{
+  float: left;
+}
+
+/* mobile
+
+@media (min-width:767px) {
+    
+}
+
+@media (min-width:768px)and(min-width:991px) {
+    .UlHeader{
+        /* margin: 10px; */
+        /* width: calc(505-10px);
+    }
+}
+
+
+@media (min-width:992px) {
+    
+}
+
+
+@media (min-width:1200px) {
+    
+} */ 
