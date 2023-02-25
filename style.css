@@ -36,11 +36,16 @@ li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-100%);
+    
   }
 
   .google{
     position: relative;
     width: 300px;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
   }
 
 
@@ -64,6 +69,10 @@ input[type="text"]{
     height: 45px;
     position: absolute;
     transform: translate(-20%,50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
   }
   input[type="text"]{
     position: absolute;
